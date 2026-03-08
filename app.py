@@ -40,7 +40,7 @@ else:
     try:
         genai.configure(api_key=user_api_key)
         # שימוש בשם המודל המדויק למניעת שגיאת NotFound
-        model = genai.GenerativeModel('gemini-1.5-flash')
+       model = genai.GenerativeModel('gemini-1.5-flash')
         
         if "messages" not in st.session_state: st.session_state.messages = []
         if "confidence" not in st.session_state: st.session_state.confidence = 0
